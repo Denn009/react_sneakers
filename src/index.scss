@@ -289,6 +289,7 @@ body {
 }
 
 .catalog-card__check{
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,6 +297,13 @@ body {
   width: 32px;
   height: 32px;
   border: 2px solid #e3e3e3;
+  border-radius: 8px;
+}
+
+
+.catalog-card__check-active{
+  background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+  border: none;
 }
 
 .catalog-card__favorite{
@@ -362,6 +370,8 @@ body {
     max-width: unset;
   }
 }
+
+
 
 @media (max-width: 700px){
 

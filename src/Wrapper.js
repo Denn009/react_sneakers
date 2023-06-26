@@ -1,6 +1,6 @@
-import Card from "./components/Card.js";
-import Header from "./components/Header.js";
-import Drawer from "./components/Drawer.js";
+import Card from "./components/Card";
+import Header from "./components/Header";
+import Drawer from "./components/Drawer";
 
 let arr = [
     {

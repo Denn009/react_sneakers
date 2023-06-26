@@ -2,6 +2,43 @@ import Card from "./components/Card.js";
 import Header from "./components/Header.js";
 import Drawer from "./components/Drawer.js";
 
+let arr = [
+    {
+        title: 'Nike Blazer Mid Suede',
+        imgUrl: "./img/sneakers-card/sneakers-1.png",
+        price: "12 999"
+    },
+
+    {
+        title: 'Nike Air Max 270',
+        imgUrl: "./img/sneakers-card/sneakers-2.png",
+        price: "12 999"
+    },
+
+    {
+        title: 'Nike Blazer Mid Suede',
+        imgUrl: "./img/sneakers-card/sneakers-3.png",
+        price: "8 499"
+    },
+
+    {
+        title: 'Nike Blazer Mid Suede',
+        imgUrl: "./img/sneakers-card/sneakers-4.png",
+        price: "8 499"
+    },
+
+    {
+        title: 'Nike Blazer Mid Suede',
+        imgUrl: "./img/sneakers-card/sneakers-5.png",
+        price: "8 499"
+    },
+
+    {
+        title: 'Nike Blazer Mid Suede',
+        imgUrl: "./img/sneakers-card/sneakers-6.png",
+        price: "8 499"
+    },
+]
 
 function Wrapper() {
   return (
@@ -30,9 +67,13 @@ function Wrapper() {
                 </div>{/*catalog-head*/}
 
                 <div className="catalog-cards">
-                    <Card />
-                    <Card />
-                    <Card />
+                    {arr.map((obj) => (
+                        <Card
+                            title={obj.title}
+                            imgUrl={obj.imgUrl}
+                            price={obj.price}
+                        />
+                    ))}
                 </div>
 
             </section>
